@@ -1,0 +1,123 @@
+2026-06-17T00:12:56.123Z  WARN 4972 --- [GestionUnchk] [HikariPool-1:housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h9m44s817ms821µs300ns).
+2026-06-17T00:36:19.816Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/v1/me/teacher/grades
+2026-06-17T00:36:20.789Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/me/teacher/grades
+2026-06-17T00:36:26.390Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] c.t.G.security.JwtAuthenticationFilter   : Utilisateur authentifié: abdou_prof
+2026-06-17T00:36:26.539Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/me/teacher/grades
+2026-06-17T00:36:26.711Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/me/teacher/grades", parameters={}
+2026-06-17T00:36:26.711Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tall.GestionUnchk.controller.MeController#getTeacherGrades()
+2026-06-17T00:36:28.306Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2026-06-17T00:36:28.512Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[GradeDTO(id=1, score=20.0, letterGrade=A, comments=BIEN, gradingDate=2026-06-14T16:41:59.526357, cr (truncated)...]
+2026-06-17T00:36:28.747Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-06-17T00:52:16.602Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/v1/me/teacher/students
+2026-06-17T00:52:16.652Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/me/teacher/students
+2026-06-17T00:52:17.003Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-9] c.t.G.security.JwtAuthenticationFilter   : Utilisateur authentifié: abdou_prof
+2026-06-17T00:52:17.003Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/me/teacher/students
+2026-06-17T00:52:17.003Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/me/teacher/students", parameters={}
+2026-06-17T00:52:17.003Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tall.GestionUnchk.controller.MeController#getMyStudents()
+2026-06-17T00:52:19.622Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2026-06-17T00:52:19.766Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[StudentDTO(id=9, studentNumber=EtudtestID, dateOfBirth=null, gender=null, address=null, city=null,  (truncated)...]
+2026-06-17T00:52:19.847Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-06-17T00:52:25.303Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/v1/auth/login
+2026-06-17T00:52:25.397Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /api/v1/auth/login
+2026-06-17T00:52:25.616Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-06-17T00:52:25.850Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured POST /api/v1/auth/login
+2026-06-17T00:52:25.865Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/api/v1/auth/login", parameters={}
+2026-06-17T00:52:25.865Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tall.GestionUnchk.controller.AuthController#login(LoginRequest)
+2026-06-17T00:52:29.970Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-1] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [LoginRequest(email=admin@unchk.edu.sn, password=Admin@2026)]
+2026-06-17T00:52:36.612Z  INFO 4972 --- [GestionUnchk] [http-nio-8080-exec-1] c.tall.GestionUnchk.service.AuthService  : Tentative de connexion pour: admin@unchk.edu.sn
+2026-06-17T00:52:37.528Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-1] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2026-06-17T00:52:38.977Z  INFO 4972 --- [GestionUnchk] [http-nio-8080-exec-1] c.tall.GestionUnchk.service.AuthService  : Connexion réussie pour: admin@unchk.edu.sn
+2026-06-17T00:52:39.826Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2026-06-17T00:52:39.926Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [LoginResponse(accessToken=eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc4MTY1NzU1NywiZXhwIjoxN (truncated)...]
+2026-06-17T00:52:40.051Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-06-17T00:52:41.674Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/v1/dashboard/stats
+2026-06-17T00:52:41.730Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/dashboard/stats
+2026-06-17T00:52:41.827Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-4] c.t.G.security.JwtAuthenticationFilter   : Utilisateur authentifié: admin
+2026-06-17T00:52:41.827Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/dashboard/stats
+2026-06-17T00:52:41.827Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/dashboard/stats", parameters={}
+2026-06-17T00:52:41.827Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tall.GestionUnchk.controller.DashboardController#getStats()
+2026-06-17T00:52:43.227Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2026-06-17T00:52:43.242Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [DashboardStatsDTO(students=11, teachers=3, courses=2, enrollments=3, grades=4)]
+2026-06-17T00:52:43.262Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-06-17T00:59:14.887Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/v1/grades
+2026-06-17T00:59:14.891Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/grades
+2026-06-17T00:59:14.957Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] c.t.G.security.JwtAuthenticationFilter   : Utilisateur authentifié: admin
+2026-06-17T00:59:15.034Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/grades
+2026-06-17T00:59:15.034Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/grades", parameters={}
+2026-06-17T00:59:15.034Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tall.GestionUnchk.controller.GradeController#getAllGrades()
+2026-06-17T00:59:15.695Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2026-06-17T00:59:15.695Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[GradeDTO(id=1, score=20.0, letterGrade=A, comments=BIEN, gradingDate=2026-06-14T16:41:59.526357, cr (truncated)...]
+2026-06-17T00:59:15.695Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-06-17T00:59:25.488Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/v1/courses
+2026-06-17T00:59:25.488Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/courses
+2026-06-17T00:59:25.504Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-8] c.t.G.security.JwtAuthenticationFilter   : Utilisateur authentifié: admin
+2026-06-17T00:59:25.504Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/courses
+2026-06-17T00:59:25.504Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/courses", parameters={}
+2026-06-17T00:59:25.504Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tall.GestionUnchk.controller.CourseController#getAllCourses()
+2026-06-17T00:59:25.669Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2026-06-17T00:59:25.702Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[CourseDTO(id=3, courseCode=UOTUOTOUT, title=laravel, description=Description vDescription Descripti (truncated)...]
+2026-06-17T00:59:25.702Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-06-17T00:59:34.866Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/v1/teachers
+2026-06-17T00:59:34.870Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/teachers
+2026-06-17T00:59:34.921Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-10] c.t.G.security.JwtAuthenticationFilter   : Utilisateur authentifié: admin
+2026-06-17T00:59:34.923Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/teachers
+2026-06-17T00:59:34.923Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/teachers", parameters={}
+2026-06-17T00:59:34.924Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tall.GestionUnchk.controller.TeacherController#getAllTeachers()
+2026-06-17T00:59:35.284Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2026-06-17T00:59:35.284Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-10] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[TeacherDTO(id=4, employeeNumber=EMP003, dateOfBirth=1980-11-12, gender=Masculin, department=Informa (truncated)...]
+2026-06-17T00:59:35.360Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-06-17T01:00:15.322Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing OPTIONS /api/v1/users
+2026-06-17T01:00:15.341Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /api/v1/users
+2026-06-17T01:00:15.424Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-2] c.t.G.security.JwtAuthenticationFilter   : Utilisateur authentifié: admin
+2026-06-17T01:00:15.425Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /api/v1/users
+2026-06-17T01:00:15.426Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/api/v1/users", parameters={}
+2026-06-17T01:00:15.426Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.tall.GestionUnchk.controller.UserController#getAllUsers()
+2026-06-17T01:00:15.803Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json, application/yaml]
+2026-06-17T01:00:15.803Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[UserDTO(id=1, username=user1, email=user1@example.com, firstName=test user1, lastName=test user1, p (truncated)...]
+2026-06-17T01:00:15.803Z DEBUG 4972 --- [GestionUnchk] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2026-06-17T01:13:54.858Z  INFO 4972 --- [GestionUnchk] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-06-17T01:13:57.589Z  INFO 4972 --- [GestionUnchk] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-06-17T01:13:59.718Z  INFO 4972 --- [GestionUnchk] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T01:14:02.118Z  INFO 4972 --- [GestionUnchk] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-06-17T01:14:02.804Z  INFO 4972 --- [GestionUnchk] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-06-17T16:36:37.320Z  INFO 5188 --- [GestionUnchk] [main] c.t.G.GestionUnchkApplication            : Starting GestionUnchkApplication using Java 17.0.18 with PID 5188 (D:\projetMaster1-IL\GestionUnchk\target\classes started by hp Elitebook in D:\projetMaster1-IL\GestionUnchk)
+2026-06-17T16:36:37.350Z DEBUG 5188 --- [GestionUnchk] [main] c.t.G.GestionUnchkApplication            : Running with Spring Boot v3.5.14, Spring v6.2.18
+2026-06-17T16:36:37.353Z  INFO 5188 --- [GestionUnchk] [main] c.t.G.GestionUnchkApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-06-17T16:36:40.645Z  INFO 5188 --- [GestionUnchk] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-17T16:36:40.874Z  INFO 5188 --- [GestionUnchk] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 201 ms. Found 8 JPA repository interfaces.
+2026-06-17T16:36:42.152Z  INFO 5188 --- [GestionUnchk] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2026-06-17T16:36:42.175Z  INFO 5188 --- [GestionUnchk] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-06-17T16:36:42.176Z  INFO 5188 --- [GestionUnchk] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.54]
+2026-06-17T16:36:42.295Z  INFO 5188 --- [GestionUnchk] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-06-17T16:36:42.323Z  INFO 5188 --- [GestionUnchk] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 4840 ms
+2026-06-17T16:36:42.706Z  INFO 5188 --- [GestionUnchk] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-17T16:36:42.832Z  INFO 5188 --- [GestionUnchk] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.49.Final
+2026-06-17T16:36:42.978Z  INFO 5188 --- [GestionUnchk] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-06-17T16:36:43.689Z  INFO 5188 --- [GestionUnchk] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-17T16:36:43.763Z  INFO 5188 --- [GestionUnchk] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-06-17T16:36:44.469Z  INFO 5188 --- [GestionUnchk] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@bf4e48e
+2026-06-17T16:36:44.479Z  INFO 5188 --- [GestionUnchk] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-06-17T16:36:44.809Z  WARN 5188 --- [GestionUnchk] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-17T16:36:44.812Z  WARN 5188 --- [GestionUnchk] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2026-06-17T16:36:44.856Z  INFO 5188 --- [GestionUnchk] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-06-17T16:36:48.027Z  INFO 5188 --- [GestionUnchk] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-17T16:36:48.995Z  INFO 5188 --- [GestionUnchk] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17T16:36:49.711Z  INFO 5188 --- [GestionUnchk] [main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-06-17T16:36:50.676Z DEBUG 5188 --- [GestionUnchk] [main] c.t.G.security.JwtAuthenticationFilter   : Filter 'jwtAuthenticationFilter' configured for use
+2026-06-17T16:36:50.817Z  INFO 5188 --- [GestionUnchk] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2026-06-17T16:36:51.475Z  WARN 5188 --- [GestionUnchk] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-17T16:36:51.814Z DEBUG 5188 --- [GestionUnchk] [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 48 mappings in 'requestMappingHandlerMapping'
+2026-06-17T16:36:52.012Z DEBUG 5188 --- [GestionUnchk] [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui/**, /swagger-ui/*swagger-initializer.js, /webjars/*swagger-ui/**, /webjars/*swagger-ui/*swagger-initializer.js, /webjars/*swagger-ui/5.32.0/*swagger-initializer.js] in 'resourceHandlerMapping'
+2026-06-17T16:36:52.337Z DEBUG 5188 --- [GestionUnchk] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, CorsFilter, LogoutFilter, JwtAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-06-17T16:36:52.504Z DEBUG 5188 --- [GestionUnchk] [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2026-06-17T16:36:52.642Z DEBUG 5188 --- [GestionUnchk] [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 2 @ExceptionHandler, 1 ResponseBodyAdvice
+2026-06-17T16:36:53.139Z  INFO 5188 --- [GestionUnchk] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2026-06-17T16:36:53.165Z  INFO 5188 --- [GestionUnchk] [main] c.t.G.GestionUnchkApplication            : Started GestionUnchkApplication in 17.42 seconds (process running for 20.628)
+2026-06-17T16:36:53.627Z  WARN 5188 --- [GestionUnchk] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
