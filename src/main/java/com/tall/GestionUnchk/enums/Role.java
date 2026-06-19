@@ -1,9 +1,12 @@
 package com.tall.GestionUnchk.enums;
 
+import lombok.Getter;
+
 /**
  * Énumération des rôles utilisateurs du système.
  * Chaque rôle a des permissions spécifiques définis dans la base de données.
  */
+@Getter
 public enum Role {
     ADMIN("Administrateur du système"),
     RECTEUR("Recteur de l'université"),
@@ -19,7 +22,4 @@ public enum Role {
         this.description = description;
     }
 
-    public String getDescription() {
-        return description;
-    }
 }

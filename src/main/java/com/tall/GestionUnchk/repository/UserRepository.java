@@ -1,10 +1,12 @@
 package com.tall.GestionUnchk.repository;
 
 import com.tall.GestionUnchk.entity.User;
+import com.tall.GestionUnchk.enums.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 /**
@@ -29,4 +31,12 @@ public interface UserRepository extends JpaRepository<User, Long> {
     boolean existsByEmail(String email);
     
     boolean existsByUsername(String username);
+    List<User> findByRoles_Name(Role role);
+    @Query("""
+SELECT DISTINCT u
+FROM User u
+JOIN u.roles r
+WHERE r.name = :role
+""")
+    List<User> findByRole(Role role);
 }

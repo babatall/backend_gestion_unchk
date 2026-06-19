@@ -1,9 +1,12 @@
 package com.tall.GestionUnchk.enums;
 
+import lombok.Getter;
+
 /**
  * Énumération des permissions disponibles.
  * Les permissions sont assignées aux rôles via la relation many-to-many.
  */
+@Getter
 public enum Permission {
     // Permissions User
     READ_USERS("Lire les utilisateurs"),
@@ -53,7 +56,4 @@ public enum Permission {
         this.description = description;
     }
 
-    public String getDescription() {
-        return description;
-    }
 }

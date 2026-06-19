@@ -120,7 +120,40 @@ public class SecurityConfig {
                         .requestMatchers(HttpMethod.POST, "/api/v1/grades").hasAnyRole("ADMIN", "ENSEIGNANT")
                         .requestMatchers(HttpMethod.PUT, "/api/v1/grades/**").hasAnyRole("ADMIN", "ENSEIGNANT")
                         .requestMatchers(HttpMethod.DELETE, "/api/v1/grades/**").hasRole("ADMIN")
-                        
+
+
+                        .requestMatchers(
+                                HttpMethod.GET,
+                                "/api/v1/courriers/**"
+                        ).hasAnyRole(
+                                "ADMIN",
+                                "PERSONNEL_ADMINISTRATIF",
+                                "RECTEUR"
+                        )
+
+                        .requestMatchers(
+                                HttpMethod.POST,
+                                "/api/v1/courriers"
+                        ).hasAnyRole(
+                                "ADMIN",
+                                "PERSONNEL_ADMINISTRATIF"
+                        )
+
+                        .requestMatchers(
+                                HttpMethod.PUT,
+                                "/api/v1/courriers/**"
+                        ).hasAnyRole(
+                                "ADMIN",
+                                "PERSONNEL_ADMINISTRATIF"
+                        )
+
+                        .requestMatchers(
+                                HttpMethod.DELETE,
+                                "/api/v1/courriers/**"
+                        ).hasRole("ADMIN")
+
+
+
                         // Tout le reste requis l'authentification
                         .anyRequest().authenticated()
                 )
@@ -151,7 +184,7 @@ public CorsConfigurationSource corsConfigurationSource() {
     configuration.setAllowedOriginPatterns(List.of("*"));
 
     configuration.setAllowedMethods(
-            List.of("GET", "POST", "PUT", "DELETE", "OPTIONS")
+            List.of("GET", "POST", "PUT", "DELETE", "OPTIONS","PATCH")
     );
 
     configuration.setAllowedHeaders(List.of("*"));

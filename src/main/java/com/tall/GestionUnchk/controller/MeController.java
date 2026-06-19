@@ -52,4 +52,21 @@ public class MeController {
                 meService.createTeacherGrade(dto)
         );
     }
+
+    @GetMapping("/courses")
+    public ResponseEntity<List<CourseDTO>> getStudentCourses(
+            Authentication authentication
+    ) {
+        return ResponseEntity.ok(
+                meService.getMyCourses(authentication)
+        );
+    }
+    @GetMapping("/grades")
+    public ResponseEntity<List<GradeDTO>> getStudentGrades(
+            Authentication authentication
+    ) {
+        return ResponseEntity.ok(
+                meService.getMyGrades(authentication)
+        );
+    }
 }

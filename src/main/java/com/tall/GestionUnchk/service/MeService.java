@@ -51,6 +51,8 @@ public class MeService {
                 .toList();
     }
 
+
+
     private CourseDTO convertCourseToDTO(
             Enrollment enrollment
     ) {
